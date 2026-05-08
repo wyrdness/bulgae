@@ -1,8 +1,8 @@
 {
   "meta": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "schema_version": "1.0.0",
-    "last_updated": "2026-02-13",
+    "last_updated": "2026-05-07",
     "repository": "https://github.com/wyrdness/bulgae",
     "maintainers": [
       {
@@ -16,71 +16,116 @@
       "content": "CC-BY-4.0"
     }
   },
+
   "phenomenon": {
     "id": "bulgae",
-    "name": "Bulgae (불개)",
-    "aliases": [],
+    "name": "Bulgae",
+    "aliases": [
+      { "name": "불개", "language": "Korean", "meaning": "'Fire dog' (literal)" },
+      { "name": "Bulgae", "language": "Korean (Revised Romanization)" },
+      { "name": "Pulgae", "language": "Korean (McCune–Reischauer)" },
+      { "name": "Hwagu", "language": "Korean", "meaning": "'Fire dog' (Sino-Korean)" }
+    ],
     "category": "MYTHOLOGICAL_CREATURE",
-    "subcategory": "Fire Dog",
+    "subcategory": "Fire dog / eclipse spirit",
     "tags": [
-      "and-cultural-meaning"
+      "korean-mythology",
+      "fire-dog",
+      "eclipse",
+      "celestial",
+      "shamanism",
+      "east-asia"
     ],
     "status": "documented",
     "description": {
-      "summary": "The Bulgae, meaning \\\"fire dogs\\\" in Korean, are mythological canine creatures from Korean folklore that chase the sun and moon across the sky.",
-      "full": "The Bulgae, meaning \\\"fire dogs\\\" in Korean, are mythological canine creatures from Korean folklore that chase the sun and moon across the sky. According to ancient Korean mythology, when these celestial fire dogs catch either celestial body, they attempt to devour it, causing solar and lunar eclipses. The Bulgae legend represents Korea's ancient astronomical understanding and cultural interpretation of eclipse phenomena, blending shamanic traditions with observational astronomy to explain these dramatic celestial events."
+      "summary": "The Bulgae (불개, 'fire dogs') are mythological hounds in Korean folklore sent by the king of the dark realm Gamangnara to steal the sun and the moon, whose biting attempts explain solar and lunar eclipses.",
+      "full": "In Korean mythology, the Bulgae (불개) are fierce celestial hounds dispatched by the king of Gamangnara — a kingdom of perpetual darkness — to seize the sun and moon and bring light to his realm. According to the traditional account, the first Bulgae was sent to capture the sun, but the sun was so unbearably hot that the dog could not hold it and was forced to spit it out. A second Bulgae was sent for the moon, but the moon was so cold that its mouth froze and it dropped its quarry. Successive kings of Gamangnara have continued to send fire dogs on the same impossible errand. The mythological narrative explains solar and lunar eclipses: the dark sections of the eclipsed body are the bites of the Bulgae, and the eclipse ends when the dog gives up and returns home. The Bulgae thus belong to a wider East and Inner Asian eclipse-mythology family that includes Chinese 'sky dog' traditions and the Norse Sköll/Hati. The legend is preserved in Korean folktale collections and remains a familiar story in modern Korean popular culture, including children's literature and animation."
     },
     "etymology": {
-      "origin": "Korean",
-      "meaning": "To be documented",
-      "first_use": "Unknown"
+      "origin": "Korean: 불 (bul, 'fire') + 개 (gae, 'dog'). The Sino-Korean equivalent 화구 (火狗, hwagu) carries the same meaning.",
+      "meaning": "'Fire dog' — an animal of supernatural fierceness associated with heat, biting, and the celestial bodies.",
+      "first_use": "Korean oral tradition; recorded in 20th-century folktale collections such as 'Hangug-ui Seolhwa' (Korean Folk Tales) and 'Korean Myths and Folk Legends' (2006)."
     }
   },
+
   "classification": {
     "taxonomy": {
       "category": "MYTHOLOGICAL_CREATURE",
-      "type": "Fire Dog",
-      "subtype": "Unknown",
-      "variant": "Unknown"
+      "type": "Celestial hound",
+      "subtype": "Eclipse-bringing fire dog",
+      "variant": "Korean"
     },
-    "related_phenomena": []
+    "related_phenomena": [
+      { "id": "tiangou", "name": "Tiangou (天狗)", "relationship": "similar", "description": "Chinese 'sky dog' that devours the sun or moon during eclipses" },
+      { "id": "skoll-hati", "name": "Sköll and Hati", "relationship": "similar", "description": "Norse wolves that pursue the sun and moon" },
+      { "id": "rahu", "name": "Rahu", "relationship": "similar", "description": "Hindu eclipse-causing demon swallowing sun and moon" }
+    ]
   },
+
   "characteristics": {
     "physical": {
-      "features": [],
-      "morphology": "See README.md for detailed physical description"
+      "coloration": ["fiery red", "black with glowing eyes"],
+      "features": [
+        { "feature": "Canine form", "description": "Large ferocious hound, often described as fire-coloured", "frequency": "always" },
+        { "feature": "Powerful jaws", "description": "Strong enough to bite the sun and moon, though unable to hold them", "frequency": "always" },
+        { "feature": "Burned/frostbitten mouth", "description": "Mouth scorched by the sun's heat and frozen by the moon's cold in alternating attempts", "frequency": "common" }
+      ],
+      "morphology": "Mythological canid — a supernatural dog of the otherworld, scaled to the size of a celestial predator."
     },
-    "abilities": [],
+    "abilities": [
+      { "ability": "Celestial pursuit", "description": "Able to ascend to the sky and chase the sun and moon", "frequency": "always", "evidence_level": "folklore" },
+      { "ability": "Eclipse-causing bite", "description": "Bites taken from the sun or moon are perceived on Earth as eclipses; the bite is released when the dog abandons its quarry", "frequency": "always", "evidence_level": "folklore" }
+    ],
     "behavior": {
-      "activity_period": "unknown",
-      "disposition": "unknown",
-      "habitat_preference": []
+      "activity_period": "variable",
+      "disposition": "aggressive",
+      "social_structure": "pack",
+      "habitat_preference": ["the kingdom of Gamangnara (Realm of Darkness)", "the celestial sphere during eclipses"],
+      "diet": "Mythologically attempts to seize the sun and moon; never successfully consumes them.",
+      "patterns": [
+        "Dispatched repeatedly by successive kings of Gamangnara",
+        "Always fails the mission",
+        "Returns to the dark realm after biting the sun or moon"
+      ]
     }
   },
+
   "distribution": {
     "range": {
-      "description": "Korean",
-      "continents": [],
-      "countries": [],
-      "regions": []
+      "description": "The Bulgae legend is a Korean mythological tradition known throughout the Korean peninsula and the Korean diaspora.",
+      "continents": ["Asia"],
+      "countries": ["South Korea", "North Korea"],
+      "regions": ["Korean Peninsula"]
     },
     "hotspots": [],
     "temporal": {
       "first_recorded": {
-        "date": "Unknown",
+        "date": "20th century (oral tradition older)",
         "circa": true,
-        "source": "Traditional folklore"
-      }
+        "source": "Korean folktale collections; oral tradition predates modern documentation"
+      },
+      "peak_activity_periods": [
+        { "period": "Pre-modern Korea", "description": "Active oral tradition, especially as an explanatory myth at eclipses" },
+        { "period": "20th–21st centuries", "description": "Preserved in folktale collections and adapted in popular media" }
+      ],
+      "seasonal_patterns": "Narrative peaks at solar and lunar eclipses, when the myth is invoked to explain the visible 'biting' of the celestial body."
     }
   },
+
   "history": {
     "origins": {
-      "cultural_roots": "Korean",
-      "earliest_accounts": "See README.md for historical details",
-      "folklore_connections": "Unknown"
+      "cultural_roots": "Korean shamanic and oral folktale tradition; part of a wider East Asian complex of eclipse mythologies attributing eclipses to celestial canids or beasts.",
+      "earliest_accounts": "Recorded in modern Korean folktale anthologies; oral tradition is older and undated.",
+      "folklore_connections": "Cognate with the Chinese tiangou, the Norse Sköll/Hati pursuit motif, and the Hindu Rahu eclipse-demon tradition."
     },
-    "timeline": []
+    "timeline": [
+      { "date": "Pre-1900", "event": "Bulgae stories transmitted as oral folklore explaining solar and lunar eclipses", "significance": "Cultural baseline of the tradition", "source": "Oral tradition" },
+      { "date": "20th century", "event": "Recorded in Korean folktale collections, including the 'Hangug-ui Seolhwa' tradition", "significance": "Written preservation of the myth", "source": "Korean folktale anthologies" },
+      { "date": "2006", "event": "James H. Grayson includes the Bulgae story in his 'Myths and Legends from Korea: An Annotated Compendium of Ancient and Modern Materials'", "significance": "Major English-language scholarly compilation", "source": "Grayson, J. H. (2006)" }
+    ],
+    "modern_era": "The Bulgae remains a familiar element of Korean cultural literacy. The story is taught to children as an explanatory eclipse myth and reappears in modern Korean animation, picture books, and games. It is increasingly cited in comparative-mythology scholarship as a Korean parallel to Chinese tiangou and Norse Sköll/Hati eclipse motifs."
   },
+
   "sightings": {
     "statistics": {
       "total_documented": 0,
@@ -91,35 +136,86 @@
     "notable": [],
     "database_path": "./sightings/"
   },
+
   "evidence": {
     "physical": [],
     "photographic": [],
     "video": [],
     "audio": [],
-    "trace": []
+    "trace": [],
+    "documentary": [
+      {
+        "id": "bulgae-evidence-grayson-2006",
+        "type": "anthology",
+        "name": "Myths and Legends from Korea",
+        "date": "2006",
+        "description": "Annotated compendium of Korean myths edited by James H. Grayson, including the Bulgae eclipse story.",
+        "status": "verified",
+        "analysis": "Standard English-language reference for Korean myth.",
+        "source": "Grayson, J. H. (2006)"
+      }
+    ]
   },
+
   "theories": {
-    "paranormal": [],
+    "paranormal": [
+      {
+        "name": "Eclipse-mythology framing",
+        "description": "Within the tradition, eclipses are caused by Bulgae sent from Gamangnara biting the sun and moon.",
+        "proponents": ["Korean oral tradition"],
+        "evidence_cited": ["Continuous folkloric tradition", "Visual analogy between bite-shaped eclipse shadow and dog-bite"]
+      }
+    ],
     "scientific": [],
-    "skeptical": []
+    "skeptical": [
+      {
+        "name": "Mythological explanation of natural phenomenon",
+        "description": "Comparative-mythology scholars treat the Bulgae as a culturally specific explanation of solar and lunar eclipses, parallel to the Chinese tiangou and the Norse Sköll/Hati.",
+        "proponents": ["James H. Grayson", "Comparative mythologists"],
+        "evidence_cited": ["Cross-cultural pattern of celestial-canid eclipse myths", "Astronomical mechanism of eclipses"]
+      }
+    ]
   },
+
   "cultural": {
     "folklore": {
-      "traditions": [],
-      "stories": [],
-      "beliefs": "See README.md for cultural context"
+      "traditions": [
+        "Korean shamanic / folktale tradition",
+        "Eclipse explanatory mythology"
+      ],
+      "stories": [
+        "The first Bulgae sent to capture the sun, repelled by its heat",
+        "The second Bulgae sent to capture the moon, repelled by its cold",
+        "The successive failed missions of the kings of Gamangnara"
+      ],
+      "beliefs": "The visible darkness during a solar or lunar eclipse is the bite of a Bulgae; the eclipse ends when the dog gives up."
     },
     "popular_culture": {
-      "literature": [],
-      "film_tv": [],
+      "literature": [
+        "Myths and Legends from Korea — James H. Grayson (2006)",
+        "Korean children's picture books retelling the Bulgae story"
+      ],
+      "film_tv": [
+        "Korean educational animations on solar/lunar eclipses retelling the Bulgae myth"
+      ],
       "games": [],
+      "music": [],
       "other": []
     }
   },
+
   "research": {
-    "researchers": [],
-    "organizations": [],
-    "ongoing_studies": "None documented"
+    "researchers": [
+      { "name": "Dr. James H. Grayson", "affiliation": "University of Sheffield", "contribution": "Compilation and annotation of Korean myths in 'Myths and Legends from Korea' (2006)", "period": "2000s" }
+    ],
+    "organizations": [
+      { "name": "Academy of Korean Studies", "url": "https://www.aks.ac.kr/", "focus": "Scholarship on Korean folklore and mythology" }
+    ],
+    "ongoing_studies": "Comparative mythology research situating the Bulgae alongside East Asian and Indo-European eclipse myths."
   },
-  "sources": []
+
+  "sources": [
+    { "id": "wikipedia-bulgae", "type": "website", "title": "Bulgae", "publication": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Bulgae", "accessed": "2026-05-07" },
+    { "id": "grayson-2006", "type": "book", "title": "Myths and Legends from Korea: An Annotated Compendium of Ancient and Modern Materials", "authors": ["James H. Grayson"], "publication": "Routledge", "date": "2006", "isbn": "978-0700712410" }
+  ]
 }
